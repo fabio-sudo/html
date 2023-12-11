@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Azure Senai</title>
+  <!-- Adicione os links do Bootstrap CSS e qualquer outro CSS personalizado aqui -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('senai-imagem.jpg'); /* Substitua pelo nome correto da sua imagem de fundo */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Cor do texto na página */
+      height: 100vh; /* Garante que a imagem cobre toda a altura da página */
+      margin: 0; /* Remove as margens padrão do corpo */
+      overflow-x: hidden; /* Esconde a barra de rolagem horizontal que pode aparecer devido ao overflow da imagem */
+    }
+
+    .navbar {
+      background-color: #007BFF; /* Cor de fundo da barra de navegação */
+    }
+
+    .btn-welcome {
+      background-color: #007BFF; /* Cor do botão */
+      color: #fff; /* Cor do texto do botão */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Azure Senai</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo da Página -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- Botão com Alerta -->
+        <button class="btn btn-welcome" onclick="mostrarAlerta()">Bem-vindo, alunos!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts JavaScript (Bootstrap e qualquer script personalizado) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Função para mostrar o alerta
+    function mostrarAlerta() {
+      alert("Bem-vindo, alunos!");
+    }
+  </script>
+</body>
+</html>
